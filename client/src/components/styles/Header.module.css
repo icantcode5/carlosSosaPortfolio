@@ -1,0 +1,28 @@
+.headerContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: solid 2px #05396B;
+}
+
+.listContainer{
+  display: flex;
+  align-items: center;
+}
+.headerContainer h4{
+  color: #05396B;
+  font-size: 1.2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  margin: 5px 0px;
+}
+
+.listContainer li{
+  list-style: none;
+  margin-right: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  color: #05396B;
+}
