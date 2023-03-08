@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./styles/Header.module.css"
 import { Link } from "react-scroll"
+import { Link as Linked } from "react-router-dom"
 
 export default function Header() {
 	return (
@@ -10,17 +11,39 @@ export default function Header() {
 				<nav>
 					<ul className={styles.listContainer}>
 						<li>
-							<Link to="/" spy={true} smooth={true} offset={50} duration={500}>
+							<Link
+								to="about"
+								spy={true}
+								smooth={true}
+								offset={-100}
+								duration={500}>
+								About
+							</Link>
+						</li>
+						<li>
+							<Link
+								to="work"
+								spy={true}
+								smooth={true}
+								offset={-30}
+								duration={500}>
 								Work
 							</Link>
 						</li>
 						<li>
-							<Link to="/" spy={true} smooth={true} offset={50} duration={500}>
+							<Linked
+								to="https://docs.google.com/document/d/1KjlMUWPDP5moamoDSvltPjz_wSJVQyR7/edit?usp=sharing&ouid=113127337887002359493&rtpof=true&sd=true"
+								target="_blank">
 								Resume
-							</Link>
+							</Linked>
 						</li>
 						<li>
-							<Link to="/" spy={true} smooth={true} offset={50} duration={500}>
+							<Link
+								to="contact"
+								spy={true}
+								smooth={true}
+								offset={50}
+								duration={500}>
 								Contact
 							</Link>
 						</li>

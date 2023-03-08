@@ -33,6 +33,7 @@ app.use(
 )
 
 //Setup to receive email
+//We are essentially sending an email to ourselves where we grab the subject, the sender's email and the message to display it. This way we can email them at the email they entered and start a new email conversation.
 const contactEmail = nodemailer.createTransport({
 	service: "gmail",
 	auth: {

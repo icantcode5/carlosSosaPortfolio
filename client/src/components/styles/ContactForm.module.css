@@ -1,5 +1,5 @@
 .section{
-  margin-bottom: 20px;
+  margin-bottom: 70px;
 }
 
 .section h2{
@@ -32,6 +32,7 @@
 .form label{
   margin-left: 5px;
 	font-family: inherit;
+	font-weight: 500;
 }
 
 .form textarea{

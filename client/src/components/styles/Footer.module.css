@@ -22,4 +22,6 @@
 .flexContainer a{
   text-decoration: none;
   color: #EDF5E1 ;
+  max-width: 40px;
+  max-height: 40px;
 }

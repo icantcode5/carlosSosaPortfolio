@@ -5,7 +5,7 @@ import { Link as Linked } from "react-router-dom"
 
 export default function Projects() {
 	return (
-		<section className={styles.section}>
+		<section className={styles.section} id="work">
 			<h2>Projects</h2>
 
 			<div className={styles.projectsContainer}>
@@ -29,12 +29,16 @@ export default function Projects() {
 					</div>
 				</div>
 
-				<Linked
-					to="https://workouttrackerapp-production.up.railway.app/"
-					target="_blank">
-					<img src={workoutAppImg} alt="workout app" />
-				</Linked>
+				<div className={styles.projectImg}>
+					<Linked
+						to="https://workouttrackerapp-production.up.railway.app/"
+						target="_blank">
+						<img src={workoutAppImg} alt="workout app" />
+					</Linked>
+					<Linked className={styles.codeLink}>View Code</Linked>
+				</div>
 			</div>
+
 			<div className={styles.projectsContainer}>
 				<div className={styles.descriptionContainer}>
 					<h3>React Trivia Game</h3>
@@ -52,10 +56,14 @@ export default function Projects() {
 					</div>
 				</div>
 
-				<Linked to="https://5questiontrivia.netlify.app/" target="_blank">
-					<img src={workoutAppImg} alt="workout app" />
-				</Linked>
+				<div className={styles.projectImg}>
+					<Linked to="https://5questiontrivia.netlify.app/" target="_blank">
+						<img src={workoutAppImg} alt="workout app" />
+					</Linked>
+					<Linked className={styles.codeLink}>View Code</Linked>
+				</div>
 			</div>
+
 			<div className={styles.projectsContainer}>
 				<div className={styles.descriptionContainer}>
 					<h3>E-Commerce</h3>
@@ -68,7 +76,12 @@ export default function Projects() {
 					</p>
 				</div>
 
-				<img src={workoutAppImg} alt="workout app" />
+				<div className={styles.projectImg}>
+					<Linked to="https://5questiontrivia.netlify.app/" target="_blank">
+						<img src={workoutAppImg} alt="workout app" />
+					</Linked>
+					<Linked className={styles.codeLink}>View Code</Linked>
+				</div>
 			</div>
 		</section>
 	)

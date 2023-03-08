@@ -32,7 +32,7 @@ function ContactForm() {
 	}
 
 	return (
-		<section className={styles.section}>
+		<section className={styles.section} id="contact">
 			<h2>Contact Me</h2>
 
 			<div className={styles.formDiv}>
@@ -64,7 +64,7 @@ function ContactForm() {
 						value={formData.subject}
 						onChange={handleChange}
 					/>
-					<label htmlFor="message">message</label>
+					<label htmlFor="message">Message</label>
 					<textarea
 						id="email"
 						required
