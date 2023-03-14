@@ -5,7 +5,7 @@ import { Link as Linked } from "react-router-dom"
 
 export default function Header() {
 	return (
-		<header>
+		<header className={styles.header}>
 			<div className={styles.headerContainer}>
 				<h4>Carlos Sosa</h4>
 				<nav>
@@ -25,9 +25,9 @@ export default function Header() {
 								to="work"
 								spy={true}
 								smooth={true}
-								offset={-30}
+								offset={-70}
 								duration={500}>
-								Work
+								Projects
 							</Link>
 						</li>
 						<li>
@@ -42,7 +42,7 @@ export default function Header() {
 								to="contact"
 								spy={true}
 								smooth={true}
-								offset={50}
+								offset={0}
 								duration={500}>
 								Contact
 							</Link>
