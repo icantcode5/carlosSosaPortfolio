@@ -35,7 +35,18 @@ export default function Projects() {
 						target="_blank">
 						<img src={workoutAppImg} alt="workout app" />
 					</Linked>
-					<Linked className={styles.codeLink}>View Code</Linked>
+					<Linked
+						to="https://github.com/icantcode5/workoutTrackerApp"
+						target="_blank"
+						className={styles.codeLink}>
+						View Code
+					</Linked>
+					<Linked
+						to="https://workouttrackerapp-production.up.railway.app/"
+						target="_blank"
+						className={styles.codeLink}>
+						View App
+					</Linked>
 				</div>
 			</div>
 
@@ -60,7 +71,18 @@ export default function Projects() {
 					<Linked to="https://5questiontrivia.netlify.app/" target="_blank">
 						<img src={workoutAppImg} alt="workout app" />
 					</Linked>
-					<Linked className={styles.codeLink}>View Code</Linked>
+					<Linked
+						to="https://github.com/icantcode5/Quizzical"
+						target="_blank"
+						className={styles.codeLink}>
+						View Code
+					</Linked>
+					<Linked
+						to="https://5questiontrivia.netlify.app/"
+						target="_blank"
+						className={styles.codeLink}>
+						View App
+					</Linked>
 				</div>
 			</div>
 
@@ -74,6 +96,15 @@ export default function Projects() {
 						day. You can view all your past workouts with timestamps and see how
 						you stack up against yourself overtime.
 					</p>
+
+					<div className={styles.techContainer}>
+						<span>JavaScript</span>
+						<span>Node.js</span>
+						<span>MongoDB</span>
+						<span>React</span>
+						<span>CSS3</span>
+						<span>JWT</span>
+					</div>
 				</div>
 
 				<div className={styles.projectImg}>
@@ -81,6 +112,7 @@ export default function Projects() {
 						<img src={workoutAppImg} alt="workout app" />
 					</Linked>
 					<Linked className={styles.codeLink}>View Code</Linked>
+					<Linked className={styles.codeLink}>View App</Linked>
 				</div>
 			</div>
 		</section>

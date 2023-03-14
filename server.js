@@ -2,15 +2,10 @@ const express = require("express")
 const app = express()
 const cors = require("cors")
 const session = require("express-session")
-const mongoose = require("mongoose")
-const MongoStore = require("connect-mongo")
-const connectDB = require("./config/database")
 const path = require("path")
 const nodemailer = require("nodemailer")
 
 require("dotenv").config({ path: "./config/.env" })
-
-connectDB()
 
 //Static folder
 if (process.env.NODE_ENV === "production") {
@@ -21,16 +16,6 @@ if (process.env.NODE_ENV === "production") {
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use(cors())
-
-app.use(
-	session({
-		secret: "keyboard cat",
-		resave: false,
-		saveUninitialized: false,
-		//store property has been updated and can be found in docs
-		store: MongoStore.create({ mongoUrl: process.env.DB_STRING }),
-	})
-)
 
 //Setup to receive email
 //We are essentially sending an email to ourselves where we grab the subject, the sender's email and the message to display it. This way we can email them at the email they entered and start a new email conversation.

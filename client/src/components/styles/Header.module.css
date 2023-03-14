@@ -1,9 +1,17 @@
+.header{
+  top: 0;
+  position: sticky;
+  background-color: #5CDB95;
+}
+
 .headerContainer{
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   border-bottom: solid 2px black;
+  top: 0;
+  position: sticky ;
 }
 
 .headerContainer h4{
@@ -17,6 +25,7 @@
 .listContainer{
   display: flex;
   align-items: center;
+
 }
 
 .listContainer li{
