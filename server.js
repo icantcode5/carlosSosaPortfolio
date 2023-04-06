@@ -1,7 +1,6 @@
 const express = require("express")
 const app = express()
 const cors = require("cors")
-const session = require("express-session")
 const path = require("path")
 const nodemailer = require("nodemailer")
 
@@ -36,7 +35,7 @@ contactEmail.verify((error) => {
 })
 
 //Email functionality
-app.post("/contact", (request, response) => {
+app.post("/api/contact", (request, response) => {
 	const { name, email, subject, message } = request.body
 
 	const mail = {

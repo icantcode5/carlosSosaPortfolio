@@ -24,15 +24,26 @@ function ContactForm() {
 
 	async function handleSubmit(event) {
 		event.preventDefault()
+		let URL = null
 
-		let response = await axios.post("http://localhost:5000/contact", formData)
-		setFormData({
-			name: "",
-			email: "",
-			subject: "",
-			message: "",
-		})
-		setResponse(response.data.status)
+		process.env.NODE_ENV === "development"
+			? (URL = "http://localhost:5000/api/contact")
+			: (URL = "https://carlossosaportfolio.onrender.com//api/contact")
+
+		try {
+			//prettier-ignore
+			let response = await axios.post(URL, formData)
+			setFormData({
+				name: "",
+				email: "",
+				subject: "",
+				message: "",
+			})
+			setResponse(response.data.status)
+		} catch (error) {
+			toast("Requested URL is Not Available")
+			setResponse("")
+		}
 	}
 
 	if (response) {
