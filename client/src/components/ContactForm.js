@@ -28,7 +28,7 @@ function ContactForm() {
 
 		process.env.NODE_ENV === "development"
 			? (URL = "http://localhost:5000/api/contact")
-			: (URL = "https://carlossosaportfolio.onrender.com//api/contact")
+			: (URL = "https://carlossosaportfolio.onrender.com/api/contact")
 
 		try {
 			//prettier-ignore
