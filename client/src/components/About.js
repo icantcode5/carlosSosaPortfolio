@@ -3,9 +3,9 @@ import styles from "./styles/About.module.css"
 import image from "../assets/me1.jpg"
 
 export default function About() {
-	function handleClick() {
-		console.log("clicked see my work")
-	}
+	// 	function handleClick() {
+	// 		console.log("clicked see my work")
+	// 	}
 
 	return (
 		<section className={styles.section} id="about">
@@ -37,7 +37,7 @@ export default function About() {
 					forefront of the field through ongoing learning and professional
 					development. Let's connect!
 				</p>
-				<button onClick={handleClick}>See my work</button>
+				{/* <button onClick={handleClick}>See my work</button> */}
 			</div>
 		</section>
 	)
