@@ -49,9 +49,11 @@ app.post("/contact", (request, response) => {
 	}
 	contactEmail.sendMail(mail, (err) => {
 		if (err) {
-			response.json({ status: "Error" })
+			response.json({
+				status: "Error! Something went wrong. Please try again.",
+			})
 		} else {
-			response.json({ status: "Message Sent" })
+			response.json({ status: "Success! Message sent" })
 		}
 	})
 })

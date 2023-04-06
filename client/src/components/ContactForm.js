@@ -2,6 +2,8 @@ import React from "react"
 import { useState } from "react"
 import styles from "./styles/ContactForm.module.css"
 import axios from "axios"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 function ContactForm() {
 	const [formData, setFormData] = useState({
@@ -10,6 +12,8 @@ function ContactForm() {
 		subject: "",
 		message: "",
 	})
+
+	const [response, setResponse] = useState("")
 
 	function handleChange(event) {
 		const { name, value } = event.target
@@ -22,13 +26,18 @@ function ContactForm() {
 		event.preventDefault()
 
 		let response = await axios.post("http://localhost:5000/contact", formData)
-		console.log(response.data)
 		setFormData({
 			name: "",
 			email: "",
 			subject: "",
 			message: "",
 		})
+		setResponse(response.data.status)
+	}
+
+	if (response) {
+		toast(response)
+		setResponse("")
 	}
 
 	return (
@@ -76,6 +85,7 @@ function ContactForm() {
 					<button>Submit</button>
 				</form>
 			</div>
+			<ToastContainer progressClassName={styles.toastProgress} />
 		</section>
 	)
 }

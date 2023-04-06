@@ -32,19 +32,22 @@ export default function Projects() {
 				<div className={styles.projectImg}>
 					<Linked
 						to="https://workouttrackerapp-production.up.railway.app/"
-						target="_blank">
+						target="_blank"
+					>
 						<img src={workoutAppImg} alt="workout app" />
 					</Linked>
 					<Linked
 						to="https://github.com/icantcode5/workoutTrackerApp"
 						target="_blank"
-						className={styles.codeLink}>
+						className={styles.codeLink}
+					>
 						View Code
 					</Linked>
 					<Linked
 						to="https://workouttrackerapp-production.up.railway.app/"
 						target="_blank"
-						className={styles.codeLink}>
+						className={styles.codeLink}
+					>
 						View App
 					</Linked>
 				</div>
@@ -74,13 +77,15 @@ export default function Projects() {
 					<Linked
 						to="https://github.com/icantcode5/Quizzical"
 						target="_blank"
-						className={styles.codeLink}>
+						className={styles.codeLink}
+					>
 						View Code
 					</Linked>
 					<Linked
 						to="https://5questiontrivia.netlify.app/"
 						target="_blank"
-						className={styles.codeLink}>
+						className={styles.codeLink}
+					>
 						View App
 					</Linked>
 				</div>
@@ -100,7 +105,7 @@ export default function Projects() {
 					<div className={styles.techContainer}>
 						<span>JavaScript</span>
 						<span>Node.js</span>
-						<span>MongoDB</span>
+						<span>postgreSQL</span>
 						<span>React</span>
 						<span>CSS3</span>
 						<span>JWT</span>
@@ -108,11 +113,22 @@ export default function Projects() {
 				</div>
 
 				<div className={styles.projectImg}>
-					<Linked to="https://5questiontrivia.netlify.app/" target="_blank">
+					<Linked to="https://ecommerceapp-w6n9.onrender.com" target="_blank">
 						<img src={workoutAppImg} alt="workout app" />
 					</Linked>
-					<Linked className={styles.codeLink}>View Code</Linked>
-					<Linked className={styles.codeLink}>View App</Linked>
+					<Linked
+						to="https://github.com/icantcode5/ecommerceApp"
+						target="_blank"
+						className={styles.codeLink}
+					>
+						View Code
+					</Linked>
+					<Linked
+						to="https://ecommerceapp-w6n9.onrender.com"
+						className={styles.codeLink}
+					>
+						View App
+					</Linked>
 				</div>
 			</div>
 		</section>
