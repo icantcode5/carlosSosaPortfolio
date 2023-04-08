@@ -45,3 +45,35 @@
 	padding: 8px 12px;
 	cursor: pointer;
 } */
+
+@media (max-width: 1000px) {
+	.aboutContainer h1 {
+		font-size: 1.8rem;
+	}
+
+	.aboutContainer p {
+		font-size: 0.9rem;
+	}
+
+	.aboutContainer {
+		width: 500px;
+	}
+
+	.imgContainer img {
+		height: 300px;
+		width: 175px;
+		border-radius: 12px;
+	}
+}
+
+@media (max-width: 810px) {
+	.aboutContainer {
+		width: 425px;
+	}
+
+	.imgContainer img {
+		height: 275px;
+		width: 155px;
+		border-radius: 12px;
+	}
+}

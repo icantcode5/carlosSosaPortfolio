@@ -20,13 +20,13 @@ export default function About() {
 					<br /> a Fullstack Web Developer.
 				</h1>
 				<p>
-					As a software developer, I am passionate about creating innovative
-					solutions that help to solve complex problems. With my technical
-					background, I have honed my skills utilizing JavaScript, Node.js,
-					MongoDB, React and more to create web applications. In addition to my
-					technical skills, I am also a strategic thinker and problem solver. I
-					enjoy exploring new technologies and tools to find the most effective
-					and efficient ways to build software that meets end users needs.
+					As a software developer, I am passionate about creating solutions that
+					help to solve complex problems. With my technical background, I have
+					honed my skills utilizing JavaScript, Node.js, MongoDB, React and more
+					to create web applications. In addition to my technical skills, I am
+					also a strategic thinker and problem solver. I enjoy exploring new
+					technologies and tools to find the most effective and efficient ways
+					to build software that meets end users needs.
 				</p>
 				<p>
 					When I am not coding, I enjoy spending time weight-lifting, hiking,
