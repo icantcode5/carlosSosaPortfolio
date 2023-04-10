@@ -1,6 +1,6 @@
 .section {
 	border-bottom: 2px solid black;
-	/* margin-bottom: 20px; */
+	margin-right: 20px;
 }
 
 .section h2 {
@@ -86,4 +86,56 @@
 	border-radius: 15px;
 	padding: 8px 12px;
 	cursor: pointer;
+}
+
+@media (max-width: 1210px) {
+	.projectsContainer {
+		gap: 50px;
+	}
+
+	.projectImg {
+		display: grid;
+		grid-template-columns: 200px 200px;
+		column-gap: 20px;
+	}
+
+	.projectImg img {
+		max-width: 425px;
+		min-height: 225px;
+	}
+
+	.descriptionContainer p {
+		font-size: 0.95rem;
+	}
+
+	.techContainer {
+		grid-template-columns: repeat(3, 6rem);
+	}
+}
+
+@media (max-width: 1100px) {
+	.descriptionContainer {
+		width: 400px;
+	}
+}
+
+@media (max-width: 1000px) {
+	.descriptionContainer p {
+		font-size: 0.85rem;
+	}
+
+	.projectImg {
+		display: grid;
+		grid-template-columns: 150px 150px;
+		column-gap: 10px;
+	}
+
+	.projectImg img {
+		max-width: 325px;
+		min-height: 175px;
+	}
+
+	.codeLink {
+		height: 40px;
+	}
 }

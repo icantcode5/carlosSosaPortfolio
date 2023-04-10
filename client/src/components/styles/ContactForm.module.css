@@ -1,6 +1,6 @@
-.section {
+/* .section {
 	margin-bottom: 70px;
-}
+} */
 
 .section h2 {
 	color: #05396b;
@@ -15,6 +15,7 @@
 
 .form {
 	max-width: 550px;
+	margin-bottom: 70px;
 }
 
 .form input {
@@ -69,4 +70,16 @@
 
 .toastProgress {
 	background: #05396b !important;
+}
+
+@media (max-width: 1000px) {
+	.form {
+		max-width: 500px;
+	}
+}
+
+@media (max-width: 810px) {
+	.form {
+		max-width: 450px;
+	}
 }
