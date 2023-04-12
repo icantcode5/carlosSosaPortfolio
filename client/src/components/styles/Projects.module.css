@@ -1,6 +1,6 @@
 .section {
 	border-bottom: 2px solid black;
-	margin-right: 20px;
+	padding-right: 20px;
 }
 
 .section h2 {
@@ -10,6 +10,9 @@
 .projectsContainer {
 	display: flex;
 	justify-content: space-around;
+	align-items: center;
+
+	margin-bottom: 50px;
 }
 
 .descriptionContainer {
@@ -19,6 +22,7 @@
 .descriptionContainer h3 {
 	font-family: "Open sans", sans-serif;
 	margin-bottom: 0px;
+	margin-top: 20px;
 }
 
 .descriptionContainer p {
@@ -46,6 +50,10 @@
 	width: 105px;
 }
 
+/* .techContainer span:last-child {
+	display: block;
+} */
+
 .projectImg {
 	display: grid;
 	grid-template-columns: 250px 250px;
@@ -57,6 +65,7 @@
 	min-height: 250px;
 	border: 2px solid black;
 	border-radius: 10px;
+	margin-top: 20px;
 }
 
 .projectImg a img {
@@ -82,25 +91,24 @@
 	border: none;
 	color: #edf5e0;
 	background-color: #05396b;
-	margin-bottom: 70px;
+	/* margin-bottom: 50px; */
 	border-radius: 15px;
 	padding: 8px 12px;
 	cursor: pointer;
 }
 
 @media (max-width: 1210px) {
-	.projectsContainer {
-		gap: 50px;
-	}
-
 	.projectImg {
 		display: grid;
 		grid-template-columns: 200px 200px;
 		column-gap: 20px;
+
+		width: 425px;
+		height: 305px;
 	}
 
 	.projectImg img {
-		max-width: 425px;
+		max-width: 420px;
 		min-height: 225px;
 	}
 
@@ -117,25 +125,185 @@
 	.descriptionContainer {
 		width: 400px;
 	}
+
+	.projectImg {
+		width: 425px;
+		height: 305px;
+	}
 }
 
 @media (max-width: 1000px) {
+	.descriptionContainer {
+		width: 380px;
+	}
 	.descriptionContainer p {
 		font-size: 0.85rem;
 	}
 
 	.projectImg {
 		display: grid;
-		grid-template-columns: 150px 150px;
+		grid-template-columns: 175px 175px;
 		column-gap: 10px;
+
+		max-width: 375px;
+		height: 265px;
 	}
 
 	.projectImg img {
-		max-width: 325px;
+		max-width: 375px;
 		min-height: 175px;
 	}
 
-	.codeLink {
-		height: 40px;
+	.techContainer span {
+		padding: 8px 8px;
+		text-align: center;
+		width: 95px;
+		padding: 6px 6px;
+	}
+}
+
+@media (max-width: 932px) {
+	.descriptionContainer {
+		width: 350px;
+	}
+}
+
+@media (max-width: 865px) {
+	.section h3 {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+	.projectsContainer {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		/* height: 700px; */
+		margin-bottom: 50px;
+	}
+
+	.techContainer {
+		justify-content: center;
+		align-items: center;
+		grid-template-columns: repeat(4, 6rem);
+	}
+
+	.descriptionContainer {
+		width: 550px;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+	}
+	.descriptionContainer p {
+		font-size: 1rem;
+	}
+
+	.projectImg {
+		display: grid;
+		grid-template-columns: 260px 260px;
+		column-gap: 0;
+
+		justify-content: center;
+		width: 520px;
+		height: 330px;
+	}
+
+	.projectImg img {
+		max-width: 525px;
+		min-height: 175px;
+		margin-top: 30px;
+	}
+}
+
+@media (max-width: 710px) {
+	.section h2 {
+		color: #05396b;
+		font-size: 1.1rem;
+	}
+
+	.descriptionContainer p {
+		font-size: 0.9rem;
+	}
+
+	.descriptionContainer {
+		width: 450px;
+	}
+
+	.projectImg {
+		grid-template-columns: 205px 205px;
+		height: 270px;
+	}
+
+	.projectImg img {
+		max-width: 425px;
+		min-height: 175px;
+	}
+
+	.techContainer {
+		justify-content: center;
+		align-items: center;
+		grid-template-columns: repeat(3, 6rem);
+	}
+}
+
+@media (max-width: 550px) {
+	.descriptionContainer h3 {
+		font-size: 1.2rem;
+	}
+	.descriptionContainer {
+		width: 350px;
+	}
+
+	.techContainer span {
+		width: 75px;
+		font-size: 0.8rem;
+	}
+
+	.projectImg {
+		grid-template-columns: 175px 175px;
+	}
+
+	.projectImg img {
+		max-width: 350px;
+		min-height: 175px;
+	}
+}
+
+@media (max-width: 480px) {
+	.section h2 {
+		font-size: 1rem;
+	}
+	.descriptionContainer h3 {
+		font-size: 0.9rem;
+	}
+	.descriptionContainer {
+		width: 300px;
+	}
+
+	.techContainer {
+		column-gap: 5px;
+		row-gap: 10px;
+		grid-template-columns: repeat(3, 4rem);
+	}
+
+	.techContainer span {
+		width: 60px;
+		font-size: 0.6rem;
+	}
+
+	.descriptionContainer p {
+		font-size: 0.8rem;
+	}
+
+	.projectImg {
+		grid-template-columns: 145px 145px;
+	}
+
+	.projectImg img {
+		max-width: 275px;
+		min-height: 175px;
 	}
 }

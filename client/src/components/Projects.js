@@ -22,6 +22,7 @@ export default function Projects() {
 					<div className={styles.techContainer}>
 						<span>JavaScript</span>
 						<span>Node.js</span>
+						<span>Express</span>
 						<span>MongoDB</span>
 						<span>React</span>
 						<span>CSS3</span>
@@ -68,10 +69,10 @@ export default function Projects() {
 					<div className={styles.techContainer}>
 						<span>JavaScript</span>
 						<span>Node.js</span>
+						<span>Express</span>
 						<span>postgreSQL</span>
 						<span>React</span>
 						<span>CSS3</span>
-						<span>JWT</span>
 					</div>
 				</div>
 
@@ -88,6 +89,7 @@ export default function Projects() {
 					</Linked>
 					<Linked
 						to="https://ecommerceapp-w6n9.onrender.com"
+						target="_blank"
 						className={styles.codeLink}
 					>
 						View App

@@ -37,7 +37,6 @@ export default function About() {
 					forefront of the field through ongoing learning and professional
 					development. Let's connect!
 				</p>
-				{/* <button onClick={handleClick}>See my work</button> */}
 			</div>
 		</section>
 	)
