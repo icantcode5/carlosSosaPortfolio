@@ -1,6 +1,8 @@
 import React from "react"
 import styles from "./styles/Projects.module.css"
-import workoutAppImg from "../assets/WorkoutApp.png"
+import WorkoutAppImg from "../assets/WorkoutApp.png"
+import TechRealImg from "../assets/TechReal.png"
+import TriviaAppImg from "../assets/TriviaApp.png"
 import { Link as Linked } from "react-router-dom"
 
 export default function Projects() {
@@ -31,11 +33,8 @@ export default function Projects() {
 				</div>
 
 				<div className={styles.projectImg}>
-					<Linked
-						to="https://workouttrackerapp-production.up.railway.app/"
-						target="_blank"
-					>
-						<img src={workoutAppImg} alt="workout app" />
+					<Linked to="https://fitfocus.onrender.com/" target="_blank">
+						<img src={WorkoutAppImg} alt="workout app" />
 					</Linked>
 					<Linked
 						to="https://github.com/icantcode5/workoutTrackerApp"
@@ -45,7 +44,7 @@ export default function Projects() {
 						View Code
 					</Linked>
 					<Linked
-						to="https://workouttrackerapp-production.up.railway.app/"
+						to="https://fitfocus.onrender.com/"
 						target="_blank"
 						className={styles.codeLink}
 					>
@@ -78,7 +77,7 @@ export default function Projects() {
 
 				<div className={styles.projectImg}>
 					<Linked to="https://ecommerceapp-w6n9.onrender.com" target="_blank">
-						<img src={workoutAppImg} alt="workout app" />
+						<img src={TechRealImg} alt="workout app" />
 					</Linked>
 					<Linked
 						to="https://github.com/icantcode5/ecommerceApp"
@@ -116,7 +115,7 @@ export default function Projects() {
 
 				<div className={styles.projectImg}>
 					<Linked to="https://5questiontrivia.netlify.app/" target="_blank">
-						<img src={workoutAppImg} alt="workout app" />
+						<img src={TriviaAppImg} alt="workout app" />
 					</Linked>
 					<Linked
 						to="https://github.com/icantcode5/Quizzical"

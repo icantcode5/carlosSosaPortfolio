@@ -299,11 +299,11 @@
 	}
 
 	.projectImg {
-		grid-template-columns: 145px 145px;
+		grid-template-columns: 140px 140px;
 	}
 
 	.projectImg img {
-		max-width: 275px;
+		max-width: 290px;
 		min-height: 175px;
 	}
 }
